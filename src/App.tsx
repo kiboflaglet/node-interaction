@@ -42,8 +42,7 @@ export default function App() {
       className="w-screen h-screen relative"
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
-      >
-      <span className="text-white ">Grab & drag</span>
+    >
       {balls.map((ball) => (
         <Ball key={ball.id} ball={ball} onMouseDown={handleMouseDown} />
       ))}
